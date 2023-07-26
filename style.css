@@ -25,12 +25,27 @@ label {
   margin-bottom: 8px;
   line-height: 24px;
 }
+span {
+  color: #c1bccc;
+  margin-left: 9px;
+  font-size: 12px;
+  line-height: 20px;
+}
 input {
   width: 100%;
   height: 55.529px;
   border-radius: 8px;
-  border: 1px solid var(--back-lines-in-white, #e6e6f0);
+  border: 1px solid #e6e6f0;
   background: #fafafc;
+}
+legend {
+  color: #253b51;
+  width: 100%;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  padding: 32px 0px 8px 0px;
+  border-bottom: 1px solid #E6E6F0;
 }
 h1,
 legend,
@@ -83,6 +98,10 @@ button {
   gap: 22px;
 }
 .name,
-.surname{
+.surname,
+.email {
   flex: 1;
+}
+.input-email {
+  margin-top: 16px;
 }
