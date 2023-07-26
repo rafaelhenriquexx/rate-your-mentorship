@@ -47,7 +47,7 @@ button {
   height: 46px;
   font-size: 16px;
 }
-.form {
+.section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,14 +56,17 @@ button {
   background: #f67669;
   border-radius: 20px 20px 0px 0px;
 }
-.legend-info {
+.section h1 {
   color: #fff;
   font-size: 24px;
   padding: 50px 275px;
   line-height: 34px;
+}
+.form{
   border: 1px solid white;
 }
 .name-surname{
   display: flex;
   gap: 22px;
+  border: 1px solid white;
 }
