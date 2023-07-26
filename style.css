@@ -15,11 +15,22 @@ body::before {
   position: absolute;
   background: #293241;
 }
-fieldset{
+fieldset {
   border: none;
 }
-input{
+label {
+  color: #4e4958;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+input {
   width: 100%;
+  height: 55.529px;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #e6e6f0);
+  background: #fafafc;
 }
 h1,
 legend,
@@ -62,11 +73,16 @@ button {
   padding: 50px 275px;
   line-height: 34px;
 }
-.form{
-  border: 1px solid white;
+.form {
+  background: #fff;
+  padding: 32px 64px 64px;
+  border-radius: 0px 0px 20px 20px;
 }
-.name-surname{
+.name-surname {
   display: flex;
   gap: 22px;
-  border: 1px solid white;
+}
+.name,
+.surname{
+  flex: 1;
 }
