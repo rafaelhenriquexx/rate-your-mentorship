@@ -24,6 +24,7 @@ label {
   font-size: 14px;
   margin-bottom: 8px;
   line-height: 24px;
+  width: 100%;
 }
 span {
   color: #c1bccc;
@@ -31,8 +32,18 @@ span {
   font-size: 12px;
   line-height: 20px;
 }
+textarea {
+  width: 100%;
+  height: 166.586px;
+  color: #4e4958;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 20px;
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+}
 select,
-option,
 input {
   width: 100%;
   color: #4e4958;
@@ -79,12 +90,11 @@ button {
   color: #fff;
   height: 46px;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 130px;
+  text-align: center;
+  padding: 50px;
   margin-top: 30px;
   background: #f67669;
   border-radius: 20px 20px 0px 0px;
@@ -92,7 +102,6 @@ button {
 .section h1 {
   color: #fff;
   font-size: 24px;
-  padding: 50px 275px;
   line-height: 34px;
 }
 .form {
@@ -100,13 +109,14 @@ button {
   padding: 32px 64px 64px;
   border-radius: 0px 0px 20px 20px;
 }
-.name-surname {
+.name-surname,
+.input-date-time {
   display: flex;
   gap: 22px;
 }
 .name,
 .surname,
-.email {
+.email, .date {
   flex: 1;
 }
 .input-email {
@@ -118,4 +128,90 @@ button {
   border-radius: 8px;
   border: 1px solid #e6e6f0;
   background: #fafafc;
+}
+.mentor-select {
+  margin-bottom: 32px;
+}
+.checkbox {
+  display: flex;
+}
+.checkbox input {
+  width: 24px;
+  height: 23.798px;
+  border: 1px solid #e6e6f0;
+  appearance: none;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.checkbox input:checked {
+  background: #253b51;
+}
+.checkbox label {
+  margin-left: 8px;
+}
+.button {
+  margin-top: 64px;
+  text-align: center;
+}
+.button button {
+  width: 100%;
+  height: 51px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  line-height: 26px; 
+  border-radius: 8px;
+  background: #f67669;
+}
+@media(max-width: 650px){
+  .header {
+    padding: 20px;
+  }
+  .form {
+    padding: 32px;
+    border-radius: 0px;
+  }
+
+}
+@media(max-width: 450px){
+  .header {
+    padding: 20px;
+  }
+  .section h1{
+    padding: 20px;
+  }
+  span {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  label{
+    font-size: 12px;
+  }
+  .input-date-time {
+    gap: 15px;
+  }
+  .form {
+    padding: 32px;
+    border-radius: 0px;
+  }
+  .section {
+    text-align: center;
+    padding: 32px;
+    margin-top: 30px;
+    background: #f67669;
+    border-radius: 15px 15px 0px 0px;
+  }
+  img{
+    width: 205px;
+    height: 80px;
+  }
+}
+@media(max-width: 390px){
+  .date {
+    width: 140px;
+  }
+  .time {
+    width: 80px;
+  }
 }

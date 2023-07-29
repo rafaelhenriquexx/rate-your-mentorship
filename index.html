@@ -68,9 +68,42 @@
             </select>
             
           </div>
-
+          <label for="mentor-select">Feedback sobre o mentor</label>
+          <div class="feedback-mentor">
+            <textarea name="feedback" id="feedback-mentor" cols="60" rows="10"></textarea>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="" id="">
+            <label for="mentor-select">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
+         
         </fieldset>
+        <fieldset>
+          <legend for="">Agendando próxima mentoria</legend>
+
+          <div class="input-date-time">
+
+            <div class="date">
+               <label for="">Data<span>(DD/MM/AAAA)</span></label>
+               <input type="date" name="date" class="date" required>
+            </div>
+            
+            <div>
+              <label for="">Das</label>
+              <input type="time"  class="time" required>
+            </div>
+            
+            <div>
+              <label for="">Até</label>
+              <input type="time" class="time" required>
+            </div>
+          </div>
+        </fieldset>
+        <div class="button">
+          <button>Salvar</button>
+        </div>
       </form>
+      
     </div>
   </body>
 </html>
