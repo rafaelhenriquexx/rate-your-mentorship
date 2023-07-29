@@ -164,6 +164,9 @@ button {
   border-radius: 8px;
   background: #f67669;
 }
+.button button:hover{
+  background: #f99999;
+}
 @media(max-width: 650px){
   .header {
     padding: 20px;
