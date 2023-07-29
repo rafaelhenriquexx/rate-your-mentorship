@@ -175,11 +175,13 @@ button {
     padding: 32px;
     border-radius: 0px;
   }
-
 }
 @media(max-width: 450px){
   .header {
     padding: 20px;
+  }
+  .header h1{
+    padding-top: 97px;
   }
   .section h1{
     padding: 20px;
@@ -200,7 +202,7 @@ button {
   }
   .section {
     text-align: center;
-    padding: 32px;
+    padding: 20px;
     margin-top: 30px;
     background: #f67669;
     border-radius: 15px 15px 0px 0px;

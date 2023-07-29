@@ -14,11 +14,10 @@
   </head>
   <body>
     <div class="container">
-
       <header class="header">
         <h1>avalie a sua mentoria</h1>
         <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
-        <img src="./image/img1 (1).svg" alt="" />
+        <img src="./image/img1 (1).svg" alt="Ilustração de avaliação" />
       </header>
       <section class="section">
         <h1 class="legend-info">Informações pessoais</h1>
@@ -26,81 +25,75 @@
 
       <form class="form">
         <fieldset>
-
           <div class="name-surname">
-
             <div class="name">
               <label for="name">Nome</label>
-              <input type="text" />
+              <input type="text" id="name"/ required>
             </div>
 
             <div class="surname">
               <label for="surname">Sobrenome</label>
-              <input type="text" />
+              <input type="text" id="surname"/ required>
             </div>
 
           </div>
 
           <div class="input-email">
-
             <div class="email">
               <label for="email">Email<span>(digite um email válido)</span></label>
-              <input type="email"/>
+              <input type="email"/ id="email" required>
             </div>
-
           </div>
-
         </fieldset>
 
         <fieldset>
           <legend>Informações do mentor</legend>
           <label for="mentor-select">Selecione quem foi o seu mentor</label>
-
           <div class="mentor-select">
-
-            <select name="mentor" id="mentor-select">
-              <option value="">Mentores</option>
-              <option value="">Rafael</option>
-              <option value="">Everton</option>
-              <option value="">Felipe</option>
-              <option value="">Larissa</option>
-              <option value="">Ingrid</option>
+            <select name="mentor" id="mentor-select" required>
+              <option value="" disabled selected>Escolha um mentor</option>
+              <option value="Rafael">Rafael</option>
+              <option value="Everton">Everton</option>
+              <option value="Felipe">Felipe</option>
+              <option value="Larissa">Larissa</option>
+              <option value="Ingrid">Ingrid</option>
             </select>
             
           </div>
           <label for="mentor-select">Feedback sobre o mentor</label>
           <div class="feedback-mentor">
-            <textarea name="feedback" id="feedback-mentor" cols="60" rows="10"></textarea>
+            <textarea name="feedback" id="mentor-select" cols="60" rows="10"></textarea>
           </div>
+
           <div class="checkbox">
-            <input type="checkbox" name="" id="">
-            <label for="mentor-select">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            <input type="checkbox" name="all_doubts_cleared" id="checkbox">
+            <label for="checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
           </div>
-         
         </fieldset>
+
         <fieldset>
           <legend for="">Agendando próxima mentoria</legend>
 
           <div class="input-date-time">
-
             <div class="date">
-               <label for="">Data<span>(DD/MM/AAAA)</span></label>
-               <input type="date" name="date" class="date" required>
+               <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+               <input type="date" name="date" class="date" id="date" required pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/AAAA">
             </div>
             
             <div>
-              <label for="">Das</label>
-              <input type="time"  class="time" required>
+              <label for="start-time">Das</label>
+              <input type="time" id="start-time" class="time" required>
             </div>
             
             <div>
-              <label for="">Até</label>
-              <input type="time" class="time" required>
+              <label for="end-time">Até</label>
+              <input type="time" id="end-time" class="time" required>
             </div>
           </div>
         </fieldset>
+        
         <div class="button">
-          <button>Salvar</button>
+          <button type="submit">Salvar</button>
         </div>
       </form>
       
